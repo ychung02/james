@@ -4,7 +4,7 @@
       <script type="text/javascript" src="js_folder_path/moozoom.js"></script>
       
     .zoombox{
-  width:600px;
+  width:500px;
   margin:0 auto;
   position: relative;
   display: block;
