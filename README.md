@@ -2,6 +2,7 @@
     <head>
       <title>James Turrell 1</title>
       <script type="text/javascript" src="js_folder_path/moozoom.js"></script>
+      
     .zoombox{
   width:600px;
   margin:0 auto;
