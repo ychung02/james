@@ -1,0 +1,13 @@
+.zoombox{
+  width:0px;
+  margin:0;
+  position: relative;
+  display: block;
+  height:0px;
+  border: 0px solid #c0c0c0;
+  background-color: #ccc;
+  padding: 5px 3px 3px 5px;
+}
+
+
+.moozoom{cursor:move}
