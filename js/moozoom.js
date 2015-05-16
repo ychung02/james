@@ -1,5 +1,5 @@
 /*----------------------------------------------
-mooZoom v1.0
+mooZoom v1.2
 
 
 mooZoom copyright: copyright (c) 2008 R'born development  - http://rborn.info
@@ -25,7 +25,7 @@ var mooZoom = new Class ({
 		options.image.setStyle('visibility','hidden');
 		
 		this.image.setStyles({position:'relative',left:0,top:0,margin:0});
-		this.initial_size = options.image.getSize().size;
+		this.initial_size = options.image.getSize();
 		this.container = new Element('div').setStyles({width:this.initial_size.x,height:this.initial_size.y,overflow:'hidden',position:'absolute',left:this.initial_position.left,top:this.initial_position.top}).injectInside(document.body).adopt(this.image);
 
 
@@ -110,7 +110,7 @@ var mooZoom = new Class ({
 									
 									
 
-				var zoom_out=new Fx.Styles( this.image ,
+				var zoom_out=new Fx.Morph( this.image ,
 					{ 
 					onComplete: function() {
 	
@@ -168,7 +168,7 @@ var mooZoom = new Class ({
 						'top':(coord.height*this.x_fact-coord.height+yi)
 					});	
 			
-					var zoom_in=new Fx.Styles( 
+					var zoom_in=new Fx.Morph( 
 						this.image,
 						{ onComplete: function() { this.busy = false;}.bind(this),
 						duration: 100, 
